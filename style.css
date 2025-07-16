@@ -405,8 +405,8 @@ body {
 }
 
 .testimonials .testimonials__cards .card__profile img {
-    width: 74px;
-    height: 60px;
+  width: 74px;
+  height: 60px;
   object-fit: cover;
 }
 
@@ -606,4 +606,135 @@ body {
 .footer .footer__social-icon:hover {
   background: #5d5dff;
   color: #fff;
+}
+@media (max-width: 1024px) {
+  .hero .hero__title {
+    padding: 0 40px;
+    font-size: 2rem;
+  }
+
+  .hero .hero__subtitle {
+    padding: 0 60px;
+    font-size: 1.1rem;
+  }
+
+  .hero .hero__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .about .about__cards .card__image img {
+    width: 400px;
+  }
+
+  .testimonials .testimonials__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .footer .footer__newsletter {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer .footer__links {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home .home__title {
+    font-size: 36px;
+  }
+
+  .home .home__description {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .hero .hero__title {
+    padding: 0 20px;
+    font-size: 1.8rem;
+  }
+
+  .hero .hero__subtitle {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  .hero .hero__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about .about__cards .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .about__cards .card__image img {
+    width: 300px;
+  }
+
+  .testimonials .testimonials__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer__top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer .footer__links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer .footer__bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 588px) {
+  .home .home__title {
+    font-size: 28px;
+  }
+
+  .home .home__description {
+    font-size: 16px;
+  }
+
+  .navbar .btn {
+    width: auto;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .about .about__header h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer .footer__newsletter-input {
+    width: 100%;
+  }
+
+  .footer .footer__newsletter-btn {
+    width: 100%;
+  }
+  .about .about__cards .card__info ul li::before {
+    display: none;
+  }
 }
